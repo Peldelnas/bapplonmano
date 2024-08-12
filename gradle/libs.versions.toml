@@ -10,9 +10,16 @@ activityCompose = "1.8.0"
 composeBom = "2024.04.01"
 navigationRuntimeKtx = "2.7.7"
 navigationCompose = "2.7.7"
+roomKtx = "2.6.1"
+roomRuntime = "2.6.1"
+roomCompiler = "2.6.1"
+ksp = "1.9.0-1.0.12"
 
 [libraries]
 androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-room-ktx = { group = "androidx.room", name = "room-ktx", version.ref = "roomKtx" }
+androidx-room-runtime = { group = "androidx.room", name = "room-runtime", version.ref = "roomRuntime" }
+androidx-room-compiler = { group = "androidx.room", name = "room-compiler", version.ref = "roomCompiler" }
 junit = { group = "junit", name = "junit", version.ref = "junit" }
 androidx-junit = { group = "androidx.test.ext", name = "junit", version.ref = "junitVersion" }
 androidx-espresso-core = { group = "androidx.test.espresso", name = "espresso-core", version.ref = "espressoCore" }
@@ -32,4 +39,4 @@ androidx-navigation-compose = { group = "androidx.navigation", name = "navigatio
 [plugins]
 android-application = { id = "com.android.application", version.ref = "agp" }
 jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
-
+ksp = { id = "com.google.devtools.ksp", version.ref = "ksp" }

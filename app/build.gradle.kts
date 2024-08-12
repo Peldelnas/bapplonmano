@@ -1,6 +1,7 @@
 plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.jetbrains.kotlin.android)
+    alias(libs.plugins.ksp) // Adding ksp plugin
 }
 
 android {
@@ -50,7 +51,6 @@ android {
 }
 
 dependencies {
-
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.lifecycle.runtime.ktx)
     implementation(libs.androidx.activity.compose)
@@ -61,6 +61,12 @@ dependencies {
     implementation(libs.androidx.material3)
     implementation(libs.androidx.navigation.runtime.ktx)
     implementation(libs.androidx.navigation.compose)
+
+    // Room dependencies
+    implementation(libs.androidx.room.runtime)
+    ksp(libs.androidx.room.compiler)
+    implementation(libs.androidx.room.ktx)
+
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

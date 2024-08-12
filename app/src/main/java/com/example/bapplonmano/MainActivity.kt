@@ -14,6 +14,7 @@ import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
+import com.example.bapplonmano.ui.screens.TeamScreen
 import com.example.bapplonmano.ui.theme.BapplonmanoTheme
 
 class MainActivity : ComponentActivity() {
